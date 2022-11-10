@@ -51,7 +51,7 @@
 
            
             total_tempo1 = total_tempo1 + sorte
-            div_mensagem.innerHTML += Cavalo01 – ${sorte} – ${} – Cavalo02 – x,xx – yy,yy - Cavalo03 – x,xx – yy,yy  
+            div_mensagem.innerHTML += `${voltas} <br>Cavalo01 – ${sorte} – ${tempo} – Cavalo02 – ${sorte} – ${tempo} - Cavalo03 – ${sorte} – ${tempo}`  
 
 
         }
@@ -60,7 +60,7 @@
             var sorte = (7 + Math.random() * 9)
             total_tempo2 = total_tempo2 + sorte
             
-            div_mensagem.innerHTML +=
+            div_mensagem.innerHTML +=   `volta ${voltas} <br>Cavalo01 – ${sorte} – ${tempo} – Cavalo02 – ${sorte} – ${tempo} - Cavalo03 – ${sorte} – ${tempo}`
 
             cavalo2.tempo.push(sorte)
         }
@@ -69,11 +69,22 @@
             var sorte = (7 + Math.random() * 9)
             cavalo3.tempo.push(sorte)
 
-            div_mensagem.innerHTML +=
+            div_mensagem.innerHTML +=  ` ${voltas} <br> Cavalo01 – ${sorte} – ${tempo} – Cavalo02 – ${sorte} – ${tempo} - Cavalo03 – ${sorte} – ${tempo}`
 
             total_tempo3 = total_tempo3 + sorte
 
 
         }
+
+        for (var voltas = 0; voltas < 7; voltas++) {
+            var sorte = (7 + Math.random() * 9)
+            cavalo3.tempo.push(sorte)
+            div_mensagem.innerHTML += ` ${voltas} <br> Cavalo01 – ${sorte} – ${tempo} – Cavalo02 – ${sorte} – ${tempo} - Cavalo03 – ${sorte} – ${tempo}`
+            
+            total_tempo4 = total_tempo4 + sorte 
+
+
+
+
     }
 </script>
