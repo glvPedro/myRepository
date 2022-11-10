@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input placeholder="cavalo 1" type="text" id="in_cavalo1"> <br>
+    <input type="text" id="in_cavalo1"> <br>
     <input type="text" id="in_cavalo2"><br>
     <input type="text" id="in_cavalo3"> <br>
     <button onclick="largada()">Dar a Largada</button>
@@ -23,37 +23,43 @@
         nome: in_cavalo1.value,
         tempo: []
     }
+    var somacavalo1 = cavalo1.tempo[0] + cavalo1.tempo[1] + cavalo1.tempo[2] + cavalo1.tempo[3] + cavalo1.tempo[4] + cavalo1.tempo[5] + cavalo1.tempo[6] + cavalo1.tempo[7]; 
 
     var cavalo2 = {
         nome: in_cavalo2.value,
         tempo: []
     }
+    var somacavalo2 = cavalo2.tempo[0] + cavalo2.tempo[1] + cavalo2.tempo[2] + cavalo2.tempo[3] + cavalo2.tempo[4] + cavalo2.tempo[5] + cavalo2.tempo[6] + cavalo2.tempo[7];
 
     var cavalo3 = {
         nome: in_cavalo3.value,
         tempo: []
     }
+    var somacavalo3 = cavalo1.tempo[0] + cavalo1.tempo[1] + cavalo1.tempo[2] + cavalo1.tempo[3] + cavalo1.tempo[4] + cavalo1.tempo[5] + cavalo1.tempo[6] + cavalo1.tempo[7];
 
     function largada() {
 
-        for (let index = 0; index < 7; index++) {
+        for (var voltas = 0; voltas < 7; voltas++) {
 
             var sorte = (7 + Math.random() * 9)
 
             cavalo1.push(sorte)
 
+            if (condition) {
 
+            }
         }
-        for (let index = 0; index < 7; index++) {
+
+        for (var voltas = 0; voltas < 7; voltas++) {
             cavalo2.push(sorte)
 
             var sorte = (7 + Math.random() * 9)
         }
-        for (let index = 0; index < 7; index++) {
+
+        for (var voltas = 0; voltas < 7; voltas++) {
             cavalo3.push(sorte)
 
             var sorte = (7 + Math.random() * 9)
         }
-
-
+    }
 </script>
