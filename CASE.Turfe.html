@@ -23,43 +23,57 @@
         nome: in_cavalo1.value,
         tempo: []
     }
-    var somacavalo1 = cavalo1.tempo[0] + cavalo1.tempo[1] + cavalo1.tempo[2] + cavalo1.tempo[3] + cavalo1.tempo[4] + cavalo1.tempo[5] + cavalo1.tempo[6] + cavalo1.tempo[7]; 
 
     var cavalo2 = {
         nome: in_cavalo2.value,
         tempo: []
     }
-    var somacavalo2 = cavalo2.tempo[0] + cavalo2.tempo[1] + cavalo2.tempo[2] + cavalo2.tempo[3] + cavalo2.tempo[4] + cavalo2.tempo[5] + cavalo2.tempo[6] + cavalo2.tempo[7];
 
     var cavalo3 = {
         nome: in_cavalo3.value,
         tempo: []
     }
-    var somacavalo3 = cavalo1.tempo[0] + cavalo1.tempo[1] + cavalo1.tempo[2] + cavalo1.tempo[3] + cavalo1.tempo[4] + cavalo1.tempo[5] + cavalo1.tempo[6] + cavalo1.tempo[7];
 
     function largada() {
+        var total_tempo1 = 0       
+        var total_tempo2 = 0
+        var total_tempo3 = 0
 
+         for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+         }
         for (var voltas = 0; voltas < 7; voltas++) {
 
             var sorte = (7 + Math.random() * 9)
 
-            cavalo1.push(sorte)
+            cavalo1.tempo.push(sorte)
 
-            if (condition) {
+           
+            total_tempo1 = total_tempo1 + sorte
+            div_mensagem.innerHTML += Cavalo01 – ${sorte} – ${} – Cavalo02 – x,xx – yy,yy - Cavalo03 – x,xx – yy,yy  
 
-            }
+
         }
 
         for (var voltas = 0; voltas < 7; voltas++) {
-            cavalo2.push(sorte)
-
             var sorte = (7 + Math.random() * 9)
+            total_tempo2 = total_tempo2 + sorte
+            
+            div_mensagem.innerHTML +=
+
+            cavalo2.tempo.push(sorte)
         }
 
         for (var voltas = 0; voltas < 7; voltas++) {
-            cavalo3.push(sorte)
-
             var sorte = (7 + Math.random() * 9)
+            cavalo3.tempo.push(sorte)
+
+            div_mensagem.innerHTML +=
+
+            total_tempo3 = total_tempo3 + sorte
+
+
         }
     }
 </script>
