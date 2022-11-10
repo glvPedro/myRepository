@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>case turfe</title>
 </head>
+
 <body>
     <input placeholder="cavalo 1" type="text" id="in_cavalo1"> <br>
     <input type="text" id="in_cavalo2"><br>
@@ -13,38 +15,45 @@
     <button onclick="largada()">Dar a Largada</button>
     <div id="div_mensagem"></div>
 </body>
+
 </html>
 <script>
 
     var cavalo1 = {
-        nome:in_cavalo1.value,
+        nome: in_cavalo1.value,
         tempo: []
     }
 
     var cavalo2 = {
-        nome:in_cavalo2.value,
+        nome: in_cavalo2.value,
         tempo: []
     }
 
     var cavalo3 = {
-        nome:in_cavalo3.value,
+        nome: in_cavalo3.value,
         tempo: []
     }
 
-    function largada(){
+    function largada() {
 
-        var tempocavalo1 = 
         for (let index = 0; index < 7; index++) {
 
-            var sorte   = 7+parseInt(Math.random()*9)
-            
+            var sorte = (7 + Math.random() * 9)
+
             cavalo1.push(sorte)
 
-            var tempocavalo1 = te
 
-    
         }
-    }
+        for (let index = 0; index < 7; index++) {
+            cavalo2.push(sorte)
+
+            var sorte = (7 + Math.random() * 9)
+        }
+        for (let index = 0; index < 7; index++) {
+            cavalo3.push(sorte)
+
+            var sorte = (7 + Math.random() * 9)
+        }
 
 
 </script>
